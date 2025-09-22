@@ -117,7 +117,7 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
    CREATE DATABASE crypto_wallet;
    ```
 
-3. **Configurer la connexion DB** dans `src/config.properties` :
+3. **Configurer la connexion DB** dans `resources/config.properties` :
 
    ```
    db.url=jdbc:postgresql://localhost:5432/crypto_wallet
