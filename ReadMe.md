@@ -43,6 +43,7 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
 │   │
 │   ├── ui/                        # Interface console
 │   │   ├── Menu.java
+│   │   ├── MenuFactory.java
 │   │   └── WalletMenu.java
 │   │
 │   ├── model/                     # Couche métier (entités)
@@ -56,6 +57,9 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
 │   │
 │   ├── service/                   # Logique métier
 │   │   ├── FeeCalculator.java
+│   │   ├── MempoolService.java
+│   │   ├── TransactionService.java
+│   │   ├── WalletService.java
 │   │   ├── BitcoinFeeCalculator.java
 │   │   └── EthereumFeeCalculator.java
 │   │
@@ -128,20 +132,20 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
 4. **Compiler le projet :**
 
    ```bash
-   javac -d bin $(find src -name "*.java")
+   javac -encoding UTF-8 -cp "lib/postgresql-42.7.8.jar;src" -d bin src/app/Main.java
    ```
 
 5. **Exécuter l’application :**
 
    ```bash
-   java -cp bin app.Main
+   java -cp "lib/postgresql-42.7.8.jar;bin" app.Main
    ```
 
 6. **Générer un JAR exécutable :**
 
    ```bash
-   jar cvfe wallet.jar app.Main -C bin .
-   java -jar wallet.jar
+   jar cfm CryptoWalletSimulator.jar META-INF/MANIFEST.MF -C bin .
+   java -jar CryptoWalletSimulator.jar
    ```
 
 ---
@@ -149,6 +153,20 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
 📊 Diagramme de classes
 
 ![Architecture](docs/architecture.png)
+
+---
+
+📸 Captures d’écran de l’application
+
+![Architecture](docs/MainMenu.png)
+
+
+![Architecture](docs/WalletList.png)
+
+![Architecture](docs/WalletMenu.png)
+
+![Architecture](docs/TransanctionInMempool.png)
+
 
 ---
 
