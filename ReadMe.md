@@ -18,7 +18,7 @@ L’application respecte les principes **SOLID**, applique les patterns **Reposi
 ## 🔗 Liens utiles
 
 * 📂 [Dépôt GitHub](https://github.com/Ibrahim-Nidam/Ibrahim_Nidam_Crypto_Wallet_Simulator.git)
-* 📝 [Tableau Jira]()
+* 📝 [Tableau Jira](https://ibrahimnidam-22.atlassian.net/jira/software/projects/CWS/boards/100?atlOrigin=eyJpIjoiMTg0ZWRjMzY4OGMwNDM1YThjZWY5ZTZkMTUyMWMwYmQiLCJwIjoiaiJ9)
 
 ---
 
